@@ -1,0 +1,183 @@
+// This is the console output of this program, using the provided files as follows: 
+// data4commands.txt
+// data4customers.txt
+// data4movies.txt
+
+
+Starting program...
+Loading movie data from file...
+Opening movie file: data4movies.txt
+Parsing classics movie: C, 10, Michael Curtiz, Casablanca, Ingrid Bergman 8 1942
+Parsing classics movie: C, 10, Michael Curtiz, Casablanca, Humphrey Bogart 8 1942
+Parsing classics movie: C, 10, Victor Fleming, The Wizard of Oz, Judy Garland 7 1939
+Parsing comedy movie: F, 10, Nora Ephron, Sleepless in Seattle, 1993
+Parsing drama movie: D, 10, Barry Levinson, Good Morning Vietnam, 1988
+Parsing drama movie: D, 10, Gus Van Sant, Good Will Hunting, 2000
+Parsing comedy movie: F, 10, Woody Allen, Annie Hall, 1977
+Parsing comedy movie: F, 10, Rob Reiner, When Harry Met Sally, 1989
+Parsing drama movie: D, 10, Phillippe De Broca, King of Hearts, 1967
+Parsing drama movie: D, 10, Steven Spielberg, Schindler's List, 1993
+Parsing comedy movie: F, 10, Gore Verbinski, Pirates of the Caribbean, 2003
+Parsing comedy movie: F, 10, Joel Coen, Fargo, 1996
+Parsing drama movie: D, 10, Jonathan Demme, Silence of the Lambs, 1991
+Parsing drama movie: D, 10, Clint Eastwood, Unforgiven, 1992
+Parsing classics movie: C, 10, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+Invalid genre code 'Z' found. Line discarded: Z, 10, Hal Ashby, Harold and Maude, Bud Cort 3 1971
+Parsing classics movie: C, 10, George Cukor, Holiday, Katherine Hepburn 9 1938
+Parsing classics movie: C, 10, George Cukor, Holiday, Cary Grant 9 1938
+Parsing classics movie: C, 10, Victor Fleming, Gone With the Wind, Vivien Leigh 2 1939
+Parsing classics movie: C, 10, Victor Fleming, Gone With the Wind, Clark Gable 2 1939
+Parsing classics movie: C, 10, George Cukor, The Philadelphia Story, Katherine Hepburn 5 1940
+Parsing classics movie: C, 10, George Cukor, The Philadelphia Story, Cary Grant 5 1940
+Parsing classics movie: C, 10, John Huston, The Maltese Falcon, Humphrey Bogart 10 1941
+Invalid genre code 'Z' found. Line discarded: Z, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+Parsing classics movie: C, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+Parsing classics movie: C, 10, Frank Capra, It's a Wonderful Life, Donna Reed 11 1946
+Parsing classics movie: C, 10, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
+Parsing comedy movie: F, 10, John Landis, National Lampoon's Animal House, 1978
+Parsing drama movie: D, 10, Nancy Savoca, Dogfight, 1991
+Parsing comedy movie: F, 10, Nora Ephron, You've Got Mail, 1998
+Finished loading movies.
+Movie data loaded successfully.
+Loading customer data from file...
+Opening customer file: data4customers.txt
+Adding customer: 3333, Wicked Witch
+Adding customer: 8888, Porky Pig
+Adding customer: 4444, Bullwinkle Moose
+Adding customer: 9999, Daffy Duck
+Adding customer: 6666, Darrell Donkey
+Adding customer: 7777, Sammy Spider
+Adding customer: 1111, Mickey Mouse
+Adding customer: 1000, Minnie Mouse
+Adding customer: 9000, Larry Lizard
+Adding customer: 8000, Wally Wacky
+Adding customer: 5000, Freddie Frog
+Adding customer: 2000, Donald Duck
+Finished loading customers.
+Customer data loaded successfully.
+Processing commands from file...
+Opening command file: data4commands.txt
+Processing command: I | I
+Inventory command detected.
+Processing command: H | H 1000
+History command detected.
+Processing command: H | H 5000
+History command detected.
+Processing command: H | H 8000
+History command detected.
+Processing command: B | B 8000 D F You've Got Mail, 1998
+Borrow command detected.
+Processing command: B | B 1000 D D Barry Levinson, Good Morning Vietnam,
+Borrow command detected.
+Processing command: B | B 1000 D C 5 1940 Katherine Hepburn
+Borrow command detected.
+Processing command: B | B 2000 D F Sleepless in Seattle, 1993
+Borrow command detected.
+Processing command: B | B 4444 D C 2 1971 Malcolm McDowell
+Borrow command detected.
+Processing command: B | B 5000 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: R | R 5000 D C 3 1971 Ruth Gordon
+Return command detected.
+Processing command: B | B 8888 D F Annie Hall, 1977
+Borrow command detected.
+Processing command: B | B 1111 D C 2 1971 Malcolm McDowell
+Borrow command detected.
+Processing command: B | B 1111 D Z 2 1971 Malcolm McDowell
+Borrow command detected.
+Processing command: B | B 5000 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: R | R 5000 D C 3 1971 Ruth Gordon
+Return command detected.
+Processing command: B | B 1000 D D Gus Van Sant, Good Will Hunting,
+Borrow command detected.
+Processing command: B | B 2000 D D Phillippe De Broca, King of Hearts,
+Borrow command detected.
+Processing command: R | R 4444 D C 2 1971 Malcolm McDowell
+Return command detected.
+Processing command: B | B 1000 D C 5 1940 Cary Grant
+Borrow command detected.
+Processing command: B | B 1111 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 1000 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 8888 D F When Harry Met Sally, 1989
+Borrow command detected.
+Processing command: B | B 8888 D D Jonathan Demme, Silence of the Lambs,
+Borrow command detected.
+Processing command: R | R 8000 D F You've Got Mail, 1998
+Return command detected.
+Processing command: B | B 9999 D F You've Got Mail, 1998
+Borrow command detected.
+Processing command: B | B 8000 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 1111 D C 10 1941 Humphrey Bogart
+Borrow command detected.
+Processing command: B | B 8000 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: X | X
+Invalid command 'X' found in line: X
+Processing command: B | B 1111 D C 9 1938 Cary Grant
+Borrow command detected.
+Processing command: B | B 5000 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 8888 D D Nancy Savoca, Dogfight,
+Borrow command detected.
+Processing command: B | B 7777 D D Steven Spielberg, Schindler's List,
+Borrow command detected.
+Processing command: R | R 5000 D C 3 1971 Ruth Gordon
+Return command detected.
+Processing command: Z | Z 1000 D C 10 1941 Humphrey Bogart
+Invalid command 'Z' found in line: Z 1000 D C 10 1941 Humphrey Bogart
+Processing command: B | B 5000 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 8000 D F National Lampoon's Animal House, 1978
+Borrow command detected.
+Processing command: B | B 8888 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 7777 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 2000 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 2000 D D Nancy Savoca, Dogfight,
+Borrow command detected.
+Processing command: B | B 9000 D D Clint Eastwood, Unforgiven,
+Borrow command detected.
+Processing command: B | B 9000 D F Fargo, 1996
+Borrow command detected.
+Processing command: B | B 1234 D C 2 1971 Malcolm McDowell
+Borrow command detected.
+Processing command: B | B 1000 D F Bogus Title, 2001
+Borrow command detected.
+Processing command: B | B 1000 Z F Fargo, 1996
+Borrow command detected.
+Processing command: B | B 2000 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 9000 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 9000 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 3333 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 7777 D C 3 1971 Ruth Gordon
+Borrow command detected.
+Processing command: B | B 1000 D D Steven Spielberg, Bogus Title,
+Borrow command detected.
+Processing command: I | I
+Inventory command detected.
+Processing command: H | H 1000
+History command detected.
+Processing command: H | H 1111
+History command detected.
+Processing command: H | H 5000
+History command detected.
+Processing command: H | H 8000
+History command detected.
+Processing command: H | H 8888
+History command detected.
+Finished processing commands.
+Commands processed successfully.
+Program finished successfully.
+
+C:\Users\17205\Desktop\Repository\Project4\Auto_Tracking_Inventory_System\x64\Debug\Auto_Tracking_Inventory_System.exe (process 12052) exited with code 0.
+Press any key to close this window . . .
